@@ -28,9 +28,7 @@ class m230904_110147_order_product extends Migration
     {
 
         $this->dropTable('order_product');
-        echo "m230904_110147_order_product cannot be reverted.\n";
 
-        return false;
     }
 
     /*

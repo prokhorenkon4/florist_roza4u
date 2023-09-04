@@ -30,8 +30,6 @@ class m230904_110210_order_history extends Migration
 
         $this->dropTable('order_history');
 
-
-        return false;
     }
 
     /*

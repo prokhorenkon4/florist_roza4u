@@ -41,10 +41,7 @@ Rating
      */
     public function safeDown()
     {
-        echo "m230904_110136_order cannot be reverted.\n";
         $this->dropTable('order');
-
-        return false;
     }
 
     /*
