@@ -19,27 +19,6 @@ class m230904_110147_order_product extends Migration
             'product_name' => $this->string(),
         ]);
 
-        // creates index for column `author_id`
-        $this->createIndex(
-            'idx-post-author_id',
-            'post',
-            'author_id'
-        );
-
-        // add foreign key for table `user`
-        $this->addForeignKey(
-            'fk-post-author_id',
-            'post',
-            'author_id',
-            'user',
-            'id',
-            'CASCADE'
-        );
-
-        order_id
-shop
-Product_name
-
     }
 
     /**

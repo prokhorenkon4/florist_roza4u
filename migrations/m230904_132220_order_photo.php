@@ -27,6 +27,7 @@ class m230904_132220_order_photo extends Migration
      */
     public function safeDown()
     {
+        $this->dropTable('order_photo');
         echo "m230904_132220_order_photo cannot be reverted.\n";
 
         return false;

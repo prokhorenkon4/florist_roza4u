@@ -32,24 +32,8 @@ Rating
      'date_added' => $this->dateTime(),,
      'date_deadline' => $this->dateTime(),
      'rating' => $this->integer(),
- ]);
+    ]);
 
-        // creates index for column `author_id`
-        $this->createIndex(
-            'idx-post-author_id',
-            'post',
-            'author_id'
-        );
-
-        // add foreign key for table `user`
-        $this->addForeignKey(
-            'fk-post-author_id',
-            'post',
-            'author_id',
-            'user',
-            'id',
-            'CASCADE'
-        );
     }
 
     /**
