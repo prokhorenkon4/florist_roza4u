@@ -4,7 +4,9 @@
 namespace app\models;
 
 
-class OrderStatus
+use yii\db\ActiveRecord;
+
+class OrderStatus extends ActiveRecord
 {
     public static function tableName()
     {

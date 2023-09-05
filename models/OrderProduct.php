@@ -4,9 +4,10 @@
 namespace app\models;
 
 
-use yii\base\Model;
 
-class OrderProduct extends Model
+use yii\db\ActiveRecord;
+
+class OrderProduct extends ActiveRecord
 {
     public static function tableName()
     {

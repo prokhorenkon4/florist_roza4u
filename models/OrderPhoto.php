@@ -4,7 +4,9 @@
 namespace app\models;
 
 
-class OrderPhoto
+use yii\db\ActiveRecord;
+
+class OrderPhoto extends ActiveRecord
 {
     public static function tableName()
     {

@@ -4,7 +4,9 @@
 namespace app\models;
 
 
-class OrderHistory
+use yii\db\ActiveRecord;
+
+class OrderHistory extends ActiveRecord
 {
 
     public static function tableName()
