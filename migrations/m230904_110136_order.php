@@ -13,25 +13,16 @@ class m230904_110136_order extends Migration
     public function safeUp()
     {
 
-        Order_id
-Shop
-Florist_id
-Photo
-Comment_manager
-Comment_customer
-Date_added
-Date_deadline
-Rating
-
-
- $this->createTable('post', [
-     'id' => $this->primaryKey(),
-     'shop' => $this->string()->notNull(),
-     'comment_manager' => $this->text(),
-     'comment_customer ' => $this->text(),
-     'date_added' => $this->dateTime(),,
-     'date_deadline' => $this->dateTime(),
-     'rating' => $this->integer(),
+        $this->createTable('post', [
+     '      id' => $this->primaryKey(),
+            'shop' => $this->string()->notNull(),
+            'comment_manager' => $this->text(),
+            'comment_customer ' => $this->text(),
+            'date_added' => $this->dateTime(),,
+            'date_deadline' => $this->dateTime(),
+            'rating' => $this->integer(),
+            'final' => $this->integer(),
+            'florist_id' => $this->integer(),
     ]);
 
     }
