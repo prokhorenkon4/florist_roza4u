@@ -9,10 +9,11 @@ use yii\db\ActiveRecord;
 
 class Order extends ActiveRecord
 {
-    public function getAll()
+    public static function tableName()
     {
-        return Order::find()->all();
+        return 'order';
     }
+
     public function getOrderProducts()
     {
         return $this->hasMany(OrderProduct::class, ['order_id' => 'id']);
